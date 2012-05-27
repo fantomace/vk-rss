@@ -6,7 +6,7 @@
  * Skype: kadukmm
  * Email: nikolay.kaduk@gmail.com
  */
-$owner_id = 22236442;
+$owner_id = $argv[1];
 
 
 header("Content-type: text/plain");
