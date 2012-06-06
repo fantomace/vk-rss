@@ -6,7 +6,8 @@
  * Skype: kadukmm
  * Email: nikolay.kaduk@gmail.com
  */
-$owner_id = $argv[1];
+//$owner_id = $argv[1];
+$owner_id = $_GET['owner_id'];
 
 
 header("Content-type: text/plain");
