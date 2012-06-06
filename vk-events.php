@@ -80,9 +80,14 @@ function vk_apiquery($api_method, $data = false, $format = 'JSON')
 }
 
 
-
 error_reporting(0);
 set_time_limit(0);
+
+// get params from url
+if (isset($_GET['email']))
+    $email   = $_GET['email'];
+if (isset($_GET['pass']))
+    $pass    = $_GET['pass'];
 
 // Login. Phase 1: get cookie
 $headers = get_headers("http://login.vk.com/?act=login&email=$email&pass=$pass");
